@@ -10,7 +10,7 @@ $this->pageTitle=Yii::app()->name;
 
 <center>
     
-   <img src='/EasyDraw/images/sorteo3.png'/>'  
+   <img src='images/sorteo3.png'/>'  
 </center>
 
 

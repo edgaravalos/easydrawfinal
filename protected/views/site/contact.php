@@ -27,7 +27,7 @@ Jorge Caluqui  0998023678 <br>
 Dalila Toledo  0995749651
 </p>
     
-   <img src='/EasyDraw/images/ct.jpg'/>'  
+   <img src='/images/ct.jpg'/>'  
 
 
 <div class="form">
