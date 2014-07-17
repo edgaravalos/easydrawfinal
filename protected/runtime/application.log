@@ -3940,3 +3940,11 @@ Stack trace:
 REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
 HTTP_REFERER=http://localhost/easydrawfinal/index.php?r=boleto/admin
 ---
+2014/07/17 18:04:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "controlador/admin"' in C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easydrawfinal/index.php
+---

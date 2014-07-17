@@ -8,7 +8,10 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'EasyDraw',
-        'language'=>'es',
+        'language'=>'es','sourceLanguage'=>'en',
+		// charset to use
+		'charset'=>'utf-8',
+		'defaultController'=>'site/index',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
