@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Sorteo', 'url'=>array('index')),
-	array('label'=>'Create Sorteo', 'url'=>array('create')),
-	array('label'=>'View Sorteo', 'url'=>array('view', 'id'=>$model->num_sorteo)),
-	array('label'=>'Manage Sorteo', 'url'=>array('admin')),
+	array('label'=>'Listar Sorteo', 'url'=>array('index')),
+	array('label'=>'Crear Sorteo', 'url'=>array('create')),
+	array('label'=>'Ver Sorteo', 'url'=>array('view', 'id'=>$model->num_sorteo)),
+	array('label'=>'Administrar Sorteo', 'url'=>array('admin')),
 );
 ?>
 

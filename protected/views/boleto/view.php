@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Boleto', 'url'=>array('index')),
-	array('label'=>'Create Boleto', 'url'=>array('create')),
-	array('label'=>'Update Boleto', 'url'=>array('update', 'id'=>$model->id_boleto)),
-	array('label'=>'Delete Boleto', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_boleto),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Boleto', 'url'=>array('admin')),
+	array('label'=>'Listar Boleto', 'url'=>array('index')),
+	array('label'=>'Crear Boleto', 'url'=>array('create')),
+	array('label'=>'Actualizar Boleto', 'url'=>array('update', 'id'=>$model->id_boleto)),
+	array('label'=>'Borrar Boleto', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_boleto),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar Boleto', 'url'=>array('admin')),
 );
 ?>
 

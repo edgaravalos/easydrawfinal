@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Boleto', 'url'=>array('index')),
-	array('label'=>'Create Boleto', 'url'=>array('create')),
-	array('label'=>'View Boleto', 'url'=>array('view', 'id'=>$model->id_boleto)),
-	array('label'=>'Manage Boleto', 'url'=>array('admin')),
+	array('label'=>'Listar Boleto', 'url'=>array('index')),
+	array('label'=>'Crear Boleto', 'url'=>array('create')),
+	array('label'=>'Ver Boleto', 'url'=>array('view', 'id'=>$model->id_boleto)),
+	array('label'=>'Administrar Boleto', 'url'=>array('admin')),
 );
 ?>
 

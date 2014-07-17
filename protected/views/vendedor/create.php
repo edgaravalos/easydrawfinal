@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Vendedor', 'url'=>array('index')),
-	array('label'=>'Manage Vendedor', 'url'=>array('admin')),
+	array('label'=>'Listar Vendedor', 'url'=>array('index')),
+	array('label'=>'Administrar Vendedor', 'url'=>array('admin')),
 );
 ?>
 

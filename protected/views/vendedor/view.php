@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Vendedor', 'url'=>array('index')),
-	array('label'=>'Create Vendedor', 'url'=>array('create')),
-	array('label'=>'Update Vendedor', 'url'=>array('update', 'id'=>$model->id_vendedor)),
-	array('label'=>'Delete Vendedor', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_vendedor),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Vendedor', 'url'=>array('admin')),
+	array('label'=>'Listar Vendedor', 'url'=>array('index')),
+	array('label'=>'Crear Vendedor', 'url'=>array('create')),
+	array('label'=>'Actualizar Vendedor', 'url'=>array('update', 'id'=>$model->id_vendedor)),
+	array('label'=>'Borrar Vendedor', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_vendedor),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrador Vendedor', 'url'=>array('admin')),
 );
 ?>
 

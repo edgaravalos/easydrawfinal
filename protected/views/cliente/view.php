@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Cliente', 'url'=>array('index')),
-	array('label'=>'Create Cliente', 'url'=>array('create')),
-	array('label'=>'Update Cliente', 'url'=>array('update', 'id'=>$model->cedula)),
-	array('label'=>'Delete Cliente', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cedula),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Cliente', 'url'=>array('admin')),
+	array('label'=>'Listar Cliente', 'url'=>array('index')),
+	array('label'=>'Crear Cliente', 'url'=>array('create')),
+	array('label'=>'Actualizar Cliente', 'url'=>array('update', 'id'=>$model->cedula)),
+	array('label'=>'Borrar Cliente', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cedula),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar Cliente', 'url'=>array('admin')),
 );
 ?>
 

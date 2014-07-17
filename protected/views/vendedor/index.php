@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Vendedor', 'url'=>array('create')),
-	array('label'=>'Manage Vendedor', 'url'=>array('admin')),
+	array('label'=>'Crear Vendedor', 'url'=>array('create')),
+	array('label'=>'Administrar Vendedor', 'url'=>array('admin')),
 );
 ?>
 

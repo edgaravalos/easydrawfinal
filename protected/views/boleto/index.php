@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Boleto', 'url'=>array('create')),
-	array('label'=>'Manage Boleto', 'url'=>array('admin')),
+	array('label'=>'Crear Boleto', 'url'=>array('create')),
+	array('label'=>'Administrar Boleto', 'url'=>array('admin')),
 );
 ?>
 

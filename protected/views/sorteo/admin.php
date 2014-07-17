@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Sorteo', 'url'=>array('index')),
-	array('label'=>'Create Sorteo', 'url'=>array('create')),
+	array('label'=>'Listar Sorteo', 'url'=>array('index')),
+	array('label'=>'Crear Sorteo', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "

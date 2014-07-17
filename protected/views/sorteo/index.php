@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Sorteo', 'url'=>array('create')),
-	array('label'=>'Manage Sorteo', 'url'=>array('admin')),
+	array('label'=>'Crear Sorteo', 'url'=>array('create')),
+	array('label'=>'Administrar Sorteo', 'url'=>array('admin')),
 );
 ?>
 
