@@ -8,7 +8,7 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'EasyDraw',
-        'language'=>'es','sourceLanguage'=>'en',
+        'language'=>'es','sourceLanguage'=>'es',
 		// charset to use
 		'charset'=>'utf-8',
 		'defaultController'=>'site/index',
