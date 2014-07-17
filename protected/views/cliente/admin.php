@@ -28,10 +28,7 @@ $('.search-form form').submit(function(){
 
 <h1>Manage Clientes</h1>
 
-<p>
-Puede usar los siguientes operadores logicos (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-o <b>=</b>)para realizar busquedas avanzadas.
-</p>
+
 
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
