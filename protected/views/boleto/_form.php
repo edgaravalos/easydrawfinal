@@ -59,7 +59,7 @@
 		<?php echo $form->labelEx($model,'fecha_venta'); ?>
             <?php date_default_timezone_set('UTC');       
                  $fecha= date("Y-m-d");
-	 echo $form->textField($model,'fecha_venta',array('readonly'=>'true',$model->fec_fac= $fecha)); ?>
+	 echo $form->textField($model,'fecha_venta',array('readonly'=>'true',$model->fecha_venta= $fecha)); ?>
             
 		<?php echo $form->error($model,'fecha_venta'); ?>
 	</div>
