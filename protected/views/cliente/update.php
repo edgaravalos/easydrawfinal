@@ -5,7 +5,7 @@
 $this->breadcrumbs=array(
 	'Clientes'=>array('index'),
 	$model->cedula=>array('view','id'=>$model->cedula),
-	'Update',
+	'Actualizar',
 );
 
 $this->menu=array(
@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update Cliente <?php echo $model->cedula; ?></h1>
+<h1>Actualizar Cliente <?php echo $model->cedula; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
