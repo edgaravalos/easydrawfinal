@@ -5,7 +5,7 @@
 $this->breadcrumbs=array(
 	'Vendedors'=>array('index'),
 	$model->id_vendedor=>array('view','id'=>$model->id_vendedor),
-	'Update',
+	'Actualizar ',
 );
 
 $this->menu=array(
@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update Vendedor <?php echo $model->id_vendedor; ?></h1>
+<h1>Actualizar Vendedor <?php echo $model->id_vendedor; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -5,7 +5,7 @@
 $this->breadcrumbs=array(
 	'Sorteos'=>array('index'),
 	$model->num_sorteo=>array('view','id'=>$model->num_sorteo),
-	'Update',
+	'Actualizar',
 );
 
 $this->menu=array(
@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update Sorteo <?php echo $model->num_sorteo; ?></h1>
+<h1>Actualizar Sorteo <?php echo $model->num_sorteo; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

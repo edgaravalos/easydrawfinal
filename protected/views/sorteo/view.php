@@ -11,7 +11,7 @@ $this->menu=array(
 	array('label'=>'Listar Sorteo', 'url'=>array('index')),
 	array('label'=>'Crear Sorteo', 'url'=>array('create')),
 	array('label'=>'Actualizar Sorteo', 'url'=>array('update', 'id'=>$model->num_sorteo)),
-	array('label'=>'Borrar Sorteo', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->num_sorteo),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Borrar Sorteo', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->num_sorteo),'confirm'=>'¿ Seguro que desea borrar este item ?')),
 	array('label'=>'Administrar Sorteo', 'url'=>array('admin')),
 );
 ?>

@@ -11,7 +11,7 @@ $this->menu=array(
 	array('label'=>'Listar Cliente', 'url'=>array('index')),
 	array('label'=>'Crear Cliente', 'url'=>array('create')),
 	array('label'=>'Actualizar Cliente', 'url'=>array('update', 'id'=>$model->cedula)),
-	array('label'=>'Borrar Cliente', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cedula),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Borrar Cliente', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cedula),'confirm'=>'¿ Seguro que desea borrar este item ?')),
 	array('label'=>'Administrar Cliente', 'url'=>array('admin')),
 );
 ?>

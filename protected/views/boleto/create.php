@@ -4,7 +4,7 @@
 
 $this->breadcrumbs=array(
 	'Boletos'=>array('index'),
-	'Create',
+	'Crear',
 );
 
 $this->menu=array(

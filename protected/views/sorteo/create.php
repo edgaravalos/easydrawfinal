@@ -4,15 +4,15 @@
 
 $this->breadcrumbs=array(
 	'Sorteos'=>array('index'),
-	'Create',
+	'Crear',
 );
 
 $this->menu=array(
-	array('label'=>'List Sorteo', 'url'=>array('index')),
-	array('label'=>'Manage Sorteo', 'url'=>array('admin')),
+	array('label'=>'Listar Sorteo', 'url'=>array('index')),
+	array('label'=>'Administrar Sorteo', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Sorteo</h1>
+<h1>Crear Sorteo</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

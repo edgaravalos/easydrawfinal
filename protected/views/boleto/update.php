@@ -5,7 +5,7 @@
 $this->breadcrumbs=array(
 	'Boletos'=>array('index'),
 	$model->id_boleto=>array('view','id'=>$model->id_boleto),
-	'Update',
+	'Actualizar',
 );
 
 $this->menu=array(
@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update Boleto <?php echo $model->id_boleto; ?></h1>
+<h1>Actualizar Boleto <?php echo $model->id_boleto; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
