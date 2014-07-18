@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 
 <center>
     
-   <img src='/images/sorteo1.jpg'/>'  
+   <img src='images/sorteo1.jpg'/>'  
 </center>
 
 <center> 
