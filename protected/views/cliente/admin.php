@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Clientes</h1>
+<h1>xxxxxxx Manage Clientes</h1>
 
 
 
