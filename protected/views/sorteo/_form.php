@@ -21,7 +21,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'fecha'); ?>
-		<?php echo $form->textField($model,'fecha'); ?>
+		<?php echo $form->textField($model,'fecha',array('size'=>10,'maxlength'=>10)); ?>
 		<?php echo $form->error($model,'fecha'); ?>
 	</div>
 
@@ -33,13 +33,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'valor'); ?>
-		<?php echo $form->textField($model,'valor'); ?>
+		<?php echo $form->textField($model,'valor',array('size'=>3,'maxlength'=>3)); ?>
 		<?php echo $form->error($model,'valor'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'estado'); ?>
-		<?php echo $form->textField($model,'estado'); ?>
+		<?php echo $form->textField($model,'estado',array('size'=>3,'maxlength'=>3)); ?>
 		<?php echo $form->error($model,'estado'); ?>
 	</div>
 

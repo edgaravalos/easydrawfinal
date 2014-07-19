@@ -23,6 +23,18 @@ class Sorteo extends CActiveRecord
 		return 'sorteo';
 	}
 
+                public static function getFechaHoraActualDateTime() {
+                                       date_default_timezone_set(self::ZONA_HORARIA);
+                                       return date("Y-m-d");
+                                                                    }
+            public function mayorque($attribute,$params)
+            {
+        if (date("Y-m-d", strtotime($this->fecha)) < date("Y-m-d", strtotime(date("Y-m-d")))) 
+                   {
+            $this->addError('fecha', 'fecha no puede ser menor a actual');
+                   }
+            }
+        
 	/**
 	 * @return array validation rules for model attributes.
 	 */
@@ -33,11 +45,13 @@ class Sorteo extends CActiveRecord
 		return array(
 			array('fecha, descripcion', 'required'),
 			array('estado', 'numerical', 'integerOnly'=>true),
-			array('valor', 'numerical'),
+			array('valor', 'numerical','integerOnly'=>true),
 			array('descripcion', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('num_sorteo, fecha, descripcion, valor, estado', 'safe', 'on'=>'search'),
+                    array('fecha','date', 'format' => 'yyyy-M-d', 'message' => 'La fecha parece inválida ingrese año(xxxx)-mes(xx)-dia(xx).'),
+		     array('fecha','mayorque'),
 		);
 	}
 

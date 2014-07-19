@@ -32,13 +32,17 @@ class Vendedor extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nombres, apellidos, email, password, telefono', 'required'),
-			array('nombres, apellidos, email', 'length', 'max'=>50),
-			array('password', 'length', 'max'=>10),
-			array('telefono', 'length', 'max'=>30),
+		array('nombres, apellidos, email, password, telefono', 'required'),
+			array('nombres, apellidos, email', 'length', 'max'=>30),
+			//array('alias, password', 'length', 'max'=>10),
+			array('telefono', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id_vendedor, nombres, apellidos, email, password, telefono', 'safe', 'on'=>'search'),
+                        array('nombres','match','pattern' => '/^[a-zA-Z\s]+$/'),
+                        array('apellidos','match','pattern' => '/^[a-zA-Z\s]+$/'),
+                        array('email','email'),
+                        array('telefono','numerical','integerOnly'=>true,'max'=>999999999,'min'=>10000000),
 		);
 	}
 

@@ -32,12 +32,22 @@ class Cliente extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('cedula, nombres, apellidos, email, telefono', 'required'),
-			array('cedula', 'length', 'max'=>10),
-			array('nombres, email, telefono', 'length', 'max'=>50),
+                    array('cedula,telefono', 'length', 'max'=>10),
+                    array('cedula','numerical', 'integerOnly'=>true,'max'=>9999999999,'min'=>100000000),
+			
+			array('nombres, email', 'length', 'max'=>30),
 			array('apellidos', 'length', 'max'=>30),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('cedula, nombres, apellidos, email, telefono', 'safe', 'on'=>'search'),
+                           array('nombres','match','pattern' => '/^[a-zA-Z\s]+$/'),
+                           array('apellidos','match','pattern' => '/^[a-zA-Z\s]+$/'),
+                          array('email','email'),
+                          array('email','unique'),
+                          array('telefono','unique'),
+                          //array('telefono', 'length', 'max'=>10),
+                          array('telefono','numerical','integerOnly'=>true,'max'=>9999999999,'min'=>900000000),
+                          
 		);
 	}
 

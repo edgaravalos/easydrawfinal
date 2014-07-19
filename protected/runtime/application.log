@@ -4023,3 +4023,92 @@ Stack trace:
 REQUEST_URI=/easydrawfinal/index.php?r=cliente/admin
 HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php
 ---
+2014/07/18 18:02:57 [error] [exception.CException] exception 'CException' with message 'La propiedad "ContactForm"."Nombre" no se encuentra definida.' in C:\xampp\htdocs\easydrawfinal\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\web\helpers\CHtml.php(2529): CComponent->__get('Nombre')
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(ContactForm), 'Nombre')
+#2 C:\xampp\htdocs\easydrawfinal\yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(ContactForm), 'Nombre', Array)
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(ContactForm), 'Nombre', Array)
+#4 C:\xampp\htdocs\easydrawfinal\protected\views\site\contact.php(49): CActiveForm->textField(Object(ContactForm), 'Nombre')
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(782): CController->renderPartial('contact', Array, true)
+#9 C:\xampp\htdocs\easydrawfinal\protected\controllers\SiteController.php(72): CController->render('contact', Array)
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionContact()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('contact')
+#15 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contact')
+#16 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=site/contact
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php
+---
+2014/07/18 19:23:37 [error] [php] include(telefono.php): failed to open stream: No such file or directory (C:\xampp\htdocs\easydrawfinal\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\validators\CValidator.php(186): import()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CModel.php(287): createValidator()
+#2 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CModel.php(260): Cliente->createValidators()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\helpers\CHtml.php(2236): Cliente->getValidators()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\helpers\CHtml.php(1434): activeInputField()
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\zii\widgets\grid\CDataColumn.php(103): activeTextField()
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\zii\widgets\grid\CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\zii\widgets\grid\CGridView.php(532): CDataColumn->renderFilterCell()
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\zii\widgets\grid\CGridView.php(510): CGridView->renderFilter()
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\zii\widgets\grid\CGridView.php(480): CGridView->renderTableHeader()
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#11 unknown(0): CGridView->renderSection()
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CBaseController.php(173): CGridView->run()
+#15 C:\xampp\htdocs\easydrawfinal\protected\views\cliente\admin.php(54): ClienteController->widget()
+#16 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CBaseController.php(126): require()
+#17 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CBaseController.php(95): ClienteController->renderInternal()
+#18 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(869): ClienteController->renderFile()
+#19 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(782): ClienteController->renderPartial()
+#20 C:\xampp\htdocs\easydrawfinal\protected\controllers\ClienteController.php(143): ClienteController->render()
+#21 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): ClienteController->actionAdmin()
+#22 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#23 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): ClienteController->runAction()
+#24 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#26 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): ClienteController->filterAccessControl()
+#27 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#28 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#29 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): ClienteController->runActionWithFilters()
+#30 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): ClienteController->run()
+#31 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#32 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#33 C:\xampp\htdocs\easydrawfinal\index.php(13): CWebApplication->run()
+REQUEST_URI=/easydrawfinal/index.php?r=cliente/admin
+in C:\xampp\htdocs\easydrawfinal\protected\views\cliente\admin.php (54)
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\ClienteController.php (143)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/18 21:26:13 [error] [exception.CException] exception 'CException' with message 'La propiedad "Vendedor"."alias" no se encuentra definida.' in C:\xampp\htdocs\easydrawfinal\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('alias')
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\validators\CRequiredValidator.php(58): CActiveRecord->__get('alias')
+#2 C:\xampp\htdocs\easydrawfinal\yii\framework\validators\CValidator.php(213): CRequiredValidator->validateAttribute(Object(Vendedor), 'alias')
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CModel.php(159): CValidator->validate(Object(Vendedor), NULL)
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#5 C:\xampp\htdocs\easydrawfinal\protected\controllers\VendedorController.php(73): CActiveRecord->save()
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): VendedorController->actionCreate()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#16 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('vendedor/create')
+#17 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=vendedor/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=vendedor/create
+---

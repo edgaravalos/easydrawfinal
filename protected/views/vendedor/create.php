@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Create Vendedor</h1>
+<h1>Crear Vendedor</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

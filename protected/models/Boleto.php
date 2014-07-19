@@ -27,6 +27,12 @@ class Boleto extends CActiveRecord
 	{
 		return 'boleto';
 	}
+          public function mayorque($attribute,$params)
+{
+        if (date("Y-m-d", strtotime($this->fecha_venta)) < date("Y-m-d", strtotime(date("Y-m-d")))) {
+            $this->addError('fecha_venta', 'fecha no puede ser menor a actual');
+        }
+    }
 
 	/**
 	 * @return array validation rules for model attributes.
@@ -36,13 +42,25 @@ class Boleto extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('numsorteo, cedcli, numvendedor, valor, numboleto, fecha_venta', 'required'),
-			array('numsorteo, numvendedor, estado, numboleto', 'numerical', 'integerOnly'=>true),
+//			array('numsorteo, cedcli, numvendedor, valor, numboleto, fecha_venta', 'required'),
+//			array('numsorteo, numvendedor, estado, numboleto', 'numerical', 'integerOnly'=>true),
+//			array('valor', 'numerical'),
+//			array('cedcli', 'length', 'max'=>10),
+//			// The following rule is used by search().
+//			// @todo Please remove those attributes that should not be searched.
+//			array('id_boleto, numsorteo, cedcli, numvendedor, valor, estado, numboleto, fecha_venta', 'safe', 'on'=>'search'),
+                        array('numsorteo, cedcli, numvendedor, valor, numboleto, fecha_venta', 'required'),
+			array('numsorteo,numvendedor,estado, numboleto', 'numerical', 'integerOnly'=>true),
 			array('valor', 'numerical'),
-			array('cedcli', 'length', 'max'=>10),
+                   // floatRegex = /[-+]?([0-9]*\.[0-9]+|[0-9]+)/; 
+			array('cedcli, estado', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_boleto, numsorteo, cedcli, numvendedor, valor, estado, numboleto, fecha_venta', 'safe', 'on'=>'search'),
+			array('id_boleto, numsorteo, cedcli, numvendedor, valor,estado, numboleto, fecha_venta', 'safe', 'on'=>'search'),
+		        array('numsorteo','numerical', 'integerOnly'=>true,'max'=>99999,'min'=>0),
+                        array('cedcli','numerical', 'integerOnly'=>true,'max'=>9999999999,'min'=>100000000),
+                      array('fecha_venta','date', 'format' => 'yyyy-M-d', 'message' => 'La fecha parece inválida ingrese año(xxxx)-mes(xx)-dia(xx).'),
+		     array('fecha_venta','mayorque'),
 		);
 	}
 

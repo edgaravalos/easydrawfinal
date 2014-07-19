@@ -27,7 +27,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'nombres'); ?>
-		<?php echo $form->textField($model,'nombres',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->textField($model,'nombres',array('size'=>30,'maxlength'=>30)); ?>
 		<?php echo $form->error($model,'nombres'); ?>
 	</div>
 
@@ -39,13 +39,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'email'); ?>
-		<?php echo $form->textField($model,'email',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->textField($model,'email',array('size'=>30,'maxlength'=>30)); ?>
 		<?php echo $form->error($model,'email'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'telefono'); ?>
-		<?php echo $form->textField($model,'telefono',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->textField($model,'telefono',array('size'=>10,'maxlength'=>10)); ?>
 		<?php echo $form->error($model,'telefono'); ?>
 	</div>
 
