@@ -39,8 +39,8 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'estado'); ?>
-		<?php echo $form->textField($model,'estado',array('size'=>3,'maxlength'=>3)); ?>
 		<?php echo $form->error($model,'estado'); ?>
+            <?php echo $form->dropDownList($model,'estado',array('0'=>'Pendiente'), array('options' => array('0'=>array('selected'=>true)))) ?>
 	</div>
 
 	<div class="row buttons">
