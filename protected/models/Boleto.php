@@ -27,12 +27,12 @@ class Boleto extends CActiveRecord
 	{
 		return 'boleto';
 	}
-          public function mayorque($attribute,$params)
-{
-        if (date("Y-m-d", strtotime($this->fecha_venta)) < date("Y-m-d", strtotime(date("Y-m-d")))) {
-            $this->addError('fecha_venta', 'fecha no puede ser menor a actual');
-        }
-    }
+//          public function mayorque($attribute,$params)
+//{
+//        if (date("Y-m-d", strtotime($this->fecha_venta)) < date("Y-m-d", strtotime(date("Y-m-d")))) {
+//            $this->addError('fecha_venta', 'fecha no puede ser menor a actual');
+//        }
+//    }
 
 	/**
 	 * @return array validation rules for model attributes.
@@ -60,7 +60,7 @@ class Boleto extends CActiveRecord
 		        array('numsorteo','numerical', 'integerOnly'=>true,'max'=>99999,'min'=>0),
                         array('cedcli','numerical', 'integerOnly'=>true,'max'=>9999999999,'min'=>100000000),
                       array('fecha_venta','date', 'format' => 'yyyy-M-d', 'message' => 'La fecha parece inválida ingrese año(xxxx)-mes(xx)-dia(xx).'),
-		     array('fecha_venta','mayorque'),
+//		     array('fecha_venta','mayorque'),
 		);
 	}
 
