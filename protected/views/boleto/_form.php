@@ -22,7 +22,7 @@
 	<div class="row">
 		<?php echo $form->labelEx($model,'numsorteo'); ?>
                 <?php echo $form->error($model,'numsorteo'); ?>
-                     <?php echo $form->dropDownList($model,'numsorteo',CHtml::listData(Sorteo::model()->findAll(), 'num_sorteo', 'num_sorteo'),array ('prompt'=>  'Seleccione...'));?>
+               <?php echo $form->dropDownList($model,'numsorteo',CHtml::listData(Sorteo::model()->findAll(), 'num_sorteo', 'num_sorteo'),array ('prompt'=>  'Seleccione...'));?>
 		
 	</div>
 
@@ -51,9 +51,12 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'numboleto'); ?>
-		<?php echo $form->textField($model,'numboleto'); ?>
-		<?php echo $form->error($model,'numboleto'); ?>
+          <?php $num=0;
+	  echo $form->labelEx($model,'numboleto');?>
+            <button> <?php $num=rand(0,99999);?>
+            Numero de boleto aleatorio </button>
+             <?php echo $form->textField($model,'numboleto',array($model->numboleto= $num)); ?>
+	    <?php echo $form->error($model,'numboleto'); ?>
 	</div>
 
 	<div class="row">
