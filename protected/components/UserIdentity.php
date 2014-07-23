@@ -19,11 +19,11 @@ class UserIdentity extends CUserIdentity
 	{
 		$users=array(
 			// username => password
-			 'cp1234'=>'cp1234',
-		         'dt1234'=>'dt1234',
-                         'ea1234'=>'ea1234',
-                         'jc1234'=>'jc1234',
-                         'fm1234'=>'fm1234',
+			 '8'=>'cp1234',
+		         '9'=>'dt1234',
+                         '10'=>'ea1234',
+                         '11'=>'jc1234',
+                         '12'=>'fm1234',
                          
                           
 		);
