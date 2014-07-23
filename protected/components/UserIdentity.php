@@ -23,8 +23,7 @@ class UserIdentity extends CUserIdentity
 		         '9'=>'dt1234',
                          '10'=>'ea1234',
                          '11'=>'jc1234',
-                         '12'=>'fm1234',
-                         
+                         '12'=>'fm1234',                      
                           
 		);
 		if(!isset($users[$this->username]))
