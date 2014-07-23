@@ -34,8 +34,8 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'numvendedor'); ?>
-		<?php echo $form->error($model,'numvendedor'); ?>
-                      <?php echo $form->dropDownList($model,'numvendedor',CHtml::listData(Vendedor::model()->findAll(), 'id_vendedor', 'id_vendedor', 'apellidos','nombres','nombres'),array ('prompt'=>  'Seleccione...'));?>
+		<?php echo $form->textField($model,'numvendedor',array('readonly'=>'true','value'=> Yii::app()->user->name )); ?>
+                <?php echo $form->error($model,'numvendedor'); ?>
 	</div>
 
 	<div class="row">
@@ -58,7 +58,8 @@
 
 	<div class="row">
              	<?php echo $form->labelEx($model,'fecha_venta'); ?>
-		<?php echo $form->textField($model,'fecha_venta'); ?>
+             <?php date_default_timezone_set('UTC');       
+                 $fecha= date("Y-m-d"); echo $form->textField($model,'fecha_venta',array('readonly'=>'true',$model->fec_fac= $fecha)); ?>
 		<?php echo $form->error($model,'fecha_venta'); ?>
 		
             
