@@ -22,11 +22,8 @@
 	<div class="row">
 		<?php echo $form->labelEx($model,'numero de sorteo'); ?>
                 <?php echo $form->error($model,'numsorteo'); ?>
-<<<<<<< HEAD
-               <?php echo $form->dropDownList($model,'numsorteo',CHtml::listData(Sorteo::model()->findAll(), 'num_sorteo', 'num_sorteo','descripcion'),array ('prompt'=>  'Seleccione...'));?>
-=======
                <?php echo $form->dropDownList($model,'numsorteo',CHtml::listData(Sorteo::model()->findAll('estado=0'), 'num_sorteo', 'num_sorteo'),array ('prompt'=>  'Seleccione...'));?>
->>>>>>> origin/master
+
 		
 	</div>
 
