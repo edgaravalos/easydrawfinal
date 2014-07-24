@@ -20,9 +20,9 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'numsorteo'); ?>
+		<?php echo $form->labelEx($model,'numero de sorteo'); ?>
                 <?php echo $form->error($model,'numsorteo'); ?>
-               <?php echo $form->dropDownList($model,'numsorteo',CHtml::listData(Sorteo::model()->findAll(), 'num_sorteo', 'num_sorteo'),array ('prompt'=>  'Seleccione...'));?>
+               <?php echo $form->dropDownList($model,'numsorteo',CHtml::listData(Sorteo::model()->findAll('estado=0'), 'num_sorteo', 'num_sorteo'),array ('prompt'=>  'Seleccione...'));?>
 		
 	</div>
 
@@ -41,7 +41,7 @@
 	<div class="row">
 		<?php echo $form->labelEx($model,'valor'); ?>
 		<?php echo $form->error($model,'valor'); ?>
-              <?php echo $form->dropDownList($model,'valor',CHtml::listData(Sorteo::model()->findAll(), 'valor','valor')); ?>
+               <?php echo $form->dropDownList($model,'valor',CHtml::listData(Sorteo::model()->findAll('num_sorteo =.$model->numsorteo'), 'valor','valor')); ?>
 	</div>
 
 	<div class="row">

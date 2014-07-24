@@ -112,7 +112,6 @@ class Boleto extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
-
 		$criteria->compare('id_boleto',$this->id_boleto);
 		$criteria->compare('numsorteo',$this->numsorteo);
 		$criteria->compare('cedcli',$this->cedcli,true);
@@ -121,8 +120,7 @@ class Boleto extends CActiveRecord
 		$criteria->compare('estado',$this->estado);
 		$criteria->compare('numboleto',$this->numboleto);
 		$criteria->compare('fecha_venta',$this->fecha_venta,true);
-
-		return new CActiveDataProvider($this, array(
+                 return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
 	}
