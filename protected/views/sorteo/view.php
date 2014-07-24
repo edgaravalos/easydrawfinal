@@ -32,7 +32,7 @@ $this->menu=array(
 ?>
 
 <br>
-<label> //<?php
+<label> <?php
     $mode=$model->num_sorteo;
     $v=($model->num_sorteo);
     $con=mysql_connect('localhost', 'root');
@@ -43,10 +43,17 @@ $this->menu=array(
       
        $v2=  mysql_query('insert into juegan(id_boleto,numboleto)SELECT id_boleto, numboleto FROM boleto WHERE numsorteo ='.$mode.' and estado=1;',$con);
         
-       $v20 = mysql_query('select count(*) from juegan',$con);
-                
-    echo "EL GANADOR ES ".$v20.".";
-      
+       $result1 = mysql_query('select * from juegan order by rand()',$con);
+       if ($row = mysql_fetch_array($result1)) 
+       {
+          $v21 = $row["numboleto"];
+          echo "EL GANADOR ES $v21" ;
+          
+       }
+        else {
+           echo "no hay ganador";
+       }
+     
     } else {
         echo "Conexion no establecida";
     }

@@ -18,8 +18,15 @@
 	<p class="note">Campos con <span class="required">*</span> son obligatorios.</p>
 
 	<?php echo $form->errorSummary($model); ?>
-
-	<div class="row">
+        <div class="row">
+          <?php $num=0;
+	  echo $form->labelEx($model,'numboleto');?>
+            <?php $num=rand(0,99999); echo "si desea otro numero presione f5 o ingrese un numero de forma manual "?>
+            <?php echo $form->textField($model,'numboleto',array($model->numboleto= $num)); ?>
+	    <?php echo $form->error($model,'numboleto'); ?>
+	</div>
+        
+      	<div class="row">
 		<?php echo $form->labelEx($model,'numero de sorteo'); ?>
                 <?php echo $form->error($model,'numsorteo'); ?>
                <?php echo $form->dropDownList($model,'numsorteo',CHtml::listData(Sorteo::model()->findAll('estado=0'), 'num_sorteo', 'num_sorteo','descripcion'),array ('prompt'=>  'Seleccione...'));?>
@@ -38,12 +45,14 @@
 		<?php echo $form->textField($model,'numvendedor',array('readonly'=>'true','value'=> Yii::app()->user->name )); ?>
                 <?php echo $form->error($model,'numvendedor'); ?>
 	</div>
-
-	<div class="row">
+        <div class="row">
 		<?php echo $form->labelEx($model,'valor'); ?>
+		<?php echo $form->textField($model,'valor',array('size'=>3,'maxlength'=>3)); ?>
 		<?php echo $form->error($model,'valor'); ?>
-               
 	</div>
+
+
+	          
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'estado'); ?>
@@ -51,14 +60,7 @@
                        <?php echo $form->dropDownList($model,'estado',array('1'=>'Pagado','0'=>'No Pagado'), array('options' => array('1'=>array('selected'=>true)))) ?>
 	</div>
 
-	<div class="row">
-          <?php $num=0;
-	  echo $form->labelEx($model,'numboleto');?>
-            <button> <?php $num=rand(0,99999);?>
-            Numero de boleto aleatorio </button>
-             <?php echo $form->textField($model,'numboleto',array($model->numboleto= $num)); ?>
-	    <?php echo $form->error($model,'numboleto'); ?>
-	</div>
+	
 
 	<div class="row">
              	<?php echo $form->labelEx($model,'fecha_venta'); ?>

@@ -6654,3 +6654,828 @@ REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
 in C:\xampp\htdocs\easydrawfinal\protected\views\boleto\_form.php (46)
 in C:\xampp\htdocs\easydrawfinal\protected\views\boleto\create.php (18)
 in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (79)
+2014/07/24 18:07:28 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '73120-17' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `numboleto`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:07:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '73120-17' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `numboleto`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:07:29 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '73120-17' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `numboleto`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:07:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '73120-17' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `numboleto`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:07:52 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '46301-18' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `numboleto`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:07:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '46301-18' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `numboleto`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:10:10 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '89254-17' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `numboleto`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:10:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '89254-17' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `numboleto`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:10:20 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '76768-17' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `numboleto`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:10:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '76768-17' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `numboleto`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:19:34 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '39385-17' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `numboleto`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:19:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '39385-17' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `numboleto`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:21:37 [error] [php] mysql_fetch_array() expects parameter 1 to be resource, boolean given (C:\xampp\htdocs\easydrawfinal\protected\views\sorteo\view.php:47)
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CBaseController.php(95): SorteoController->renderInternal()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(869): SorteoController->renderFile()
+#2 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(782): SorteoController->renderPartial()
+#3 C:\xampp\htdocs\easydrawfinal\protected\controllers\SorteoController.php(56): SorteoController->render()
+#4 unknown(0): SorteoController->actionView()
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): SorteoController->runAction()
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): SorteoController->filterAccessControl()
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): SorteoController->runActionWithFilters()
+#15 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): SorteoController->run()
+#16 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\easydrawfinal\index.php(13): CWebApplication->run()
+REQUEST_URI=/easydrawfinal/index.php?r=sorteo/view&id=17
+in C:\xampp\htdocs\easydrawfinal\protected\views\sorteo\view.php (47)
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\SorteoController.php (56)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:22:06 [error] [php] mysql_fetch_array() expects parameter 1 to be resource, boolean given (C:\xampp\htdocs\easydrawfinal\protected\views\sorteo\view.php:47)
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CBaseController.php(95): SorteoController->renderInternal()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(869): SorteoController->renderFile()
+#2 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(782): SorteoController->renderPartial()
+#3 C:\xampp\htdocs\easydrawfinal\protected\controllers\SorteoController.php(56): SorteoController->render()
+#4 unknown(0): SorteoController->actionView()
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): SorteoController->runAction()
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): SorteoController->filterAccessControl()
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): SorteoController->runActionWithFilters()
+#15 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): SorteoController->run()
+#16 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\easydrawfinal\index.php(13): CWebApplication->run()
+REQUEST_URI=/easydrawfinal/index.php?r=sorteo/view&id=17
+in C:\xampp\htdocs\easydrawfinal\protected\views\sorteo\view.php (47)
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\SorteoController.php (56)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:23:30 [error] [php] mysql_fetch_array() expects parameter 1 to be resource, boolean given (C:\xampp\htdocs\easydrawfinal\protected\views\sorteo\view.php:47)
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CBaseController.php(95): SorteoController->renderInternal()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(869): SorteoController->renderFile()
+#2 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(782): SorteoController->renderPartial()
+#3 C:\xampp\htdocs\easydrawfinal\protected\controllers\SorteoController.php(56): SorteoController->render()
+#4 unknown(0): SorteoController->actionView()
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): SorteoController->runAction()
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): SorteoController->filterAccessControl()
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): SorteoController->runActionWithFilters()
+#15 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): SorteoController->run()
+#16 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\easydrawfinal\index.php(13): CWebApplication->run()
+REQUEST_URI=/easydrawfinal/index.php?r=sorteo/view&id=17
+in C:\xampp\htdocs\easydrawfinal\protected\views\sorteo\view.php (47)
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\SorteoController.php (56)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:32:34 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`draw`.`boleto`, CONSTRAINT `FK_boleto_vendedor_id_vendedor` FOREIGN KEY (`numvendedor`) REFERENCES `vendedor` (`id_vendedor`) ON DELETE CASCADE ON UPDATE CASCADE). La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:32:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`draw`.`boleto`, CONSTRAINT `FK_boleto_vendedor_id_vendedor` FOREIGN KEY (`numvendedor`) REFERENCES `vendedor` (`id_vendedor`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:32:38 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`draw`.`boleto`, CONSTRAINT `FK_boleto_vendedor_id_vendedor` FOREIGN KEY (`numvendedor`) REFERENCES `vendedor` (`id_vendedor`) ON DELETE CASCADE ON UPDATE CASCADE). La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:32:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`draw`.`boleto`, CONSTRAINT `FK_boleto_vendedor_id_vendedor` FOREIGN KEY (`numvendedor`) REFERENCES `vendedor` (`id_vendedor`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:32:46 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`draw`.`boleto`, CONSTRAINT `FK_boleto_vendedor_id_vendedor` FOREIGN KEY (`numvendedor`) REFERENCES `vendedor` (`id_vendedor`) ON DELETE CASCADE ON UPDATE CASCADE). La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:32:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`draw`.`boleto`, CONSTRAINT `FK_boleto_vendedor_id_vendedor` FOREIGN KEY (`numvendedor`) REFERENCES `vendedor` (`id_vendedor`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:36:46 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`draw`.`boleto`, CONSTRAINT `FK_boleto_vendedor_id_vendedor` FOREIGN KEY (`numvendedor`) REFERENCES `vendedor` (`id_vendedor`) ON DELETE CASCADE ON UPDATE CASCADE). La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:36:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`draw`.`boleto`, CONSTRAINT `FK_boleto_vendedor_id_vendedor` FOREIGN KEY (`numvendedor`) REFERENCES `vendedor` (`id_vendedor`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:36:56 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`draw`.`boleto`, CONSTRAINT `FK_boleto_vendedor_id_vendedor` FOREIGN KEY (`numvendedor`) REFERENCES `vendedor` (`id_vendedor`) ON DELETE CASCADE ON UPDATE CASCADE). La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:36:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`draw`.`boleto`, CONSTRAINT `FK_boleto_vendedor_id_vendedor` FOREIGN KEY (`numvendedor`) REFERENCES `vendedor` (`id_vendedor`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:36:57 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`draw`.`boleto`, CONSTRAINT `FK_boleto_vendedor_id_vendedor` FOREIGN KEY (`numvendedor`) REFERENCES `vendedor` (`id_vendedor`) ON DELETE CASCADE ON UPDATE CASCADE). La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:36:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`draw`.`boleto`, CONSTRAINT `FK_boleto_vendedor_id_vendedor` FOREIGN KEY (`numvendedor`) REFERENCES `vendedor` (`id_vendedor`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:37:00 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`draw`.`boleto`, CONSTRAINT `FK_boleto_vendedor_id_vendedor` FOREIGN KEY (`numvendedor`) REFERENCES `vendedor` (`id_vendedor`) ON DELETE CASCADE ON UPDATE CASCADE). La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:37:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`draw`.`boleto`, CONSTRAINT `FK_boleto_vendedor_id_vendedor` FOREIGN KEY (`numvendedor`) REFERENCES `vendedor` (`id_vendedor`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:37:01 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`draw`.`boleto`, CONSTRAINT `FK_boleto_vendedor_id_vendedor` FOREIGN KEY (`numvendedor`) REFERENCES `vendedor` (`id_vendedor`) ON DELETE CASCADE ON UPDATE CASCADE). La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:37:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`draw`.`boleto`, CONSTRAINT `FK_boleto_vendedor_id_vendedor` FOREIGN KEY (`numvendedor`) REFERENCES `vendedor` (`id_vendedor`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:42:57 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '10885-10' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:42:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '10885-10' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:43:00 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '10885-10' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:43:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '10885-10' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:43:33 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '59298-10' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:43:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '59298-10' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:43:36 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '59298-10' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:43:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '59298-10' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:44:31 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '21350-10' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:44:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '21350-10' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:44:56 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '23110-10' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:44:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '23110-10' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:46:04 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '98489-10' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:46:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '98489-10' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:46:06 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '98489-10' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:46:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '98489-10' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:46:06 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '98489-10' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:46:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '98489-10' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:47:32 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '83047-10' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `numboleto`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:47:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '83047-10' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `numboleto`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:47:45 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '73660-10' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `numboleto`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:47:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '73660-10' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `numboleto`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:47:47 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '73660-10' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `numboleto`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:47:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '73660-10' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `numboleto`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:47:49 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '73660-10' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `numboleto`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:47:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '73660-10' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `numboleto`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:52:32 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '89651-10' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:52:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '89651-10' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:52:32 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '89651-10' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:52:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '89651-10' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
+2014/07/24 18:53:10 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '12345-10' for key 'UK_boleto'. La sentencia SQL ejecutada fue: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php (73)
+in C:\xampp\htdocs\easydrawfinal\index.php (13)
+2014/07/24 18:53:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '12345-10' for key 'UK_boleto'. The SQL statement executed was: INSERT INTO `boleto` (`estado`, `numboleto`, `numsorteo`, `cedcli`, `numvendedor`, `valor`, `fecha_venta`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\xampp\htdocs\easydrawfinal\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\easydrawfinal\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\easydrawfinal\protected\controllers\BoletoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\easydrawfinal\yii\framework\web\actions\CInlineAction.php(49): BoletoController->actionCreate()
+#4 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\easydrawfinal\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\easydrawfinal\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('boleto/create')
+#14 C:\xampp\htdocs\easydrawfinal\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\easydrawfinal\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easydrawfinal/index.php?r=boleto/create
+HTTP_REFERER=http://localhost:8080/easydrawfinal/index.php?r=boleto/create
+---
