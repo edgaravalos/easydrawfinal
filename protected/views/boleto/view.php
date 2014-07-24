@@ -21,10 +21,8 @@ $this->menu=array(
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'id_boleto',
 		'numsorteo',
 		'cedcli',
-		'numvendedor',
 		'valor',
 		'estado',
 		'numboleto',

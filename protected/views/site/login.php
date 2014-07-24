@@ -9,9 +9,9 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<h1>Ingrese usuario administrador</h1>
+<h1>Ingrese su numero de vendedor</h1>
 
-<p>Ingrese su nombre de Usuario y Contraseña:</p>
+<p>Ingrese su numero de vendedor y Contraseña:</p>
 
 <div class="form">
 <?php $form=$this->beginWidget('CActiveForm', array(
@@ -25,7 +25,7 @@ $this->breadcrumbs=array(
 	<p class="note">los campos con  <span class="required">*</span> son requeridos.</p>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'usuario'); ?>
+		<?php echo $form->labelEx($model,'Numero de vendedor'); ?>
 		<?php echo $form->textField($model,'username'); ?>
 		<?php echo $form->error($model,'username'); ?>
 	</div>
