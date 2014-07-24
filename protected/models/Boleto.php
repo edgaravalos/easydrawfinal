@@ -60,7 +60,7 @@ class Boleto extends CActiveRecord
 		        array('numsorteo','numerical', 'integerOnly'=>true,'max'=>99999,'min'=>0),
                         array('cedcli','numerical', 'integerOnly'=>true,'max'=>9999999999,'min'=>100000000),
                       array('fecha_venta','date', 'format' => 'yyyy-M-d', 'message' => 'La fecha parece inválida ingrese año(xxxx)-mes(xx)-dia(xx).'),
-		     array('fecha_venta','mayorque'),
+		    // array('fecha_venta','mayorque'),
 		);
 	}
 
