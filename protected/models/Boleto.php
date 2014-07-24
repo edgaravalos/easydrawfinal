@@ -27,12 +27,12 @@ class Boleto extends CActiveRecord
 	{
 		return 'boleto';
 	}
-          public function mayorque($attribute,$params)
-{
-        if (date("Y-m-d", strtotime($this->fecha_venta)) < date("Y-m-d", strtotime(date("Y-m-d")))) {
-            $this->addError('fecha_venta', 'fecha no puede ser menor a actual');
-        }
-    }
+//          public function mayorque($attribute,$params)
+//{
+//        if (date("Y-m-d", strtotime($this->fecha_venta)) < date("Y-m-d", strtotime(date("Y-m-d")))) {
+//            $this->addError('fecha_venta', 'fecha no puede ser menor a actual');
+//        }
+//    }
 
 	/**
 	 * @return array validation rules for model attributes.
@@ -60,7 +60,11 @@ class Boleto extends CActiveRecord
 		        array('numsorteo','numerical', 'integerOnly'=>true,'max'=>99999,'min'=>0),
                         array('cedcli','numerical', 'integerOnly'=>true,'max'=>9999999999,'min'=>100000000),
                       array('fecha_venta','date', 'format' => 'yyyy-M-d', 'message' => 'La fecha parece inválida ingrese año(xxxx)-mes(xx)-dia(xx).'),
+<<<<<<< HEAD
 		    // array('fecha_venta','mayorque'),
+=======
+//		     array('fecha_venta','mayorque'),
+>>>>>>> origin/master
 		);
 	}
 
@@ -112,7 +116,6 @@ class Boleto extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
-
 		$criteria->compare('id_boleto',$this->id_boleto);
 		$criteria->compare('numsorteo',$this->numsorteo);
 		$criteria->compare('cedcli',$this->cedcli,true);
@@ -121,8 +124,7 @@ class Boleto extends CActiveRecord
 		$criteria->compare('estado',$this->estado);
 		$criteria->compare('numboleto',$this->numboleto);
 		$criteria->compare('fecha_venta',$this->fecha_venta,true);
-
-		return new CActiveDataProvider($this, array(
+                 return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
 	}
