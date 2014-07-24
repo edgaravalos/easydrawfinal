@@ -42,7 +42,7 @@
 	<div class="row">
 		<?php echo $form->labelEx($model,'valor'); ?>
 		<?php echo $form->error($model,'valor'); ?>
-               <?php echo $form->dropDownList($model,'valor',CHtml::listData(Sorteo::model()->findAll(), 'valor','valor')); ?>
+               
 	</div>
 
 	<div class="row">
