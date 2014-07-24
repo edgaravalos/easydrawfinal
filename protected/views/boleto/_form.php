@@ -22,7 +22,7 @@
 	<div class="row">
 		<?php echo $form->labelEx($model,'numsorteo'); ?>
                 <?php echo $form->error($model,'numsorteo'); ?>
-               <?php echo $form->dropDownList($model,'numsorteo',CHtml::listData(Sorteo::model()->findAll(), 'num_sorteo', 'num_sorteo'),array ('prompt'=>  'Seleccione...'));?>
+               <?php echo $form->dropDownList($model,'numsorteo',CHtml::listData(Sorteo::model()->findAll(), 'num_sorteo', 'num_sorteo','descripcion'),array ('prompt'=>  'Seleccione...'));?>
 		
 	</div>
 
