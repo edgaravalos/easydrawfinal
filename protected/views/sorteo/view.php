@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Sorteo #<?php echo $model->num_sorteo; ?></h1>
+<h1>Ver Sorteo #<?php echo $model->num_sorteo; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
@@ -27,4 +27,27 @@ $this->menu=array(
 		'valor',
 		'estado',
 	),
-)); ?>
+    
+));
+?>
+
+<br>
+<label> //<?php
+    $mode=$model->num_sorteo;
+    $v=($model->num_sorteo);
+    $con=mysql_connect('localhost', 'root');
+    if ($con == TRUE) {
+        mysql_select_db('draw',$con); 
+        
+       $v1 = mysql_query('truncate juegan',$con);
+      
+       $v2=  mysql_query('insert into juegan(id_boleto,numboleto)SELECT id_boleto, numboleto FROM boleto WHERE numsorteo ='.$mode.' and estado=1;',$con);
+        
+       $v20 = mysql_query('select count(*) from juegan',$con);
+                
+    echo "EL GANADOR ES ".$v20.".";
+      
+    } else {
+        echo "Conexion no establecida";
+    }
+    ?> </label>
